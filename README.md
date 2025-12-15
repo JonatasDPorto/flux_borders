@@ -8,13 +8,13 @@ Flux Borders allows you to add unique visual effects to your Flutter widgets wit
 
 📹 **[Watch the demo video](https://github.com/user-attachments/assets/f1248248-b3e8-489f-9a7f-edce5f451f52)**
 
-*   **High Performance**: Uses Fragment Shaders (`.frag`) for smooth animations (60 FPS+).
-*   **Diverse Effects**: Includes 13+ unique border types ranging from classic Neon to complex effects like Fire, Liquid, and Circuit.
-*   **Highly Customizable**: Adjust colors, speeds, widths, spacing, and more.
-*   **Global Parameters**:
-    *   **Glow**: Add a beautiful outer glow to any border.
-    *   **Speed**: Control animation speed and direction (positive for clockwise, negative for counter-clockwise, 0 for static).
-    *   **Responsive**: Automatically adapts to widget size and border radius.
+* **High Performance**: Uses Fragment Shaders (`.frag`) for smooth animations (60 FPS+).
+* **Diverse Effects**: Includes 13+ unique border types ranging from classic Neon to complex effects like Fire, Liquid, and Circuit.
+* **Highly Customizable**: Adjust colors, speeds, widths, spacing, and more.
+* **Global Parameters**:
+  * **Glow**: Add a beautiful outer glow to any border.
+  * **Speed**: Control animation speed and direction (positive for clockwise, negative for counter-clockwise, 0 for static).
+  * **Responsive**: Automatically adapts to widget size and border radius.
 
 ## Installation
 
@@ -22,7 +22,7 @@ Add `flux_borders` to your `pubspec.yaml`:
 
 ```yaml
 dependencies:
-  flux_borders: ^0.0.1
+  flux_borders: ^0.0.2
 ```
 
 Then run:
@@ -53,6 +53,7 @@ FluxBorder.snake(
 ## Available Borders
 
 ### 1. Snake
+
 A solid line that chases itself around the border.
 
 ```dart
@@ -64,6 +65,7 @@ FluxBorder.snake(
 ```
 
 ### 2. Rainbow
+
 A rotating gradient of full spectrum colors.
 
 ```dart
@@ -74,6 +76,7 @@ FluxBorder.rainbow(
 ```
 
 ### 3. Electric
+
 Simulates electrical current flowing through the border.
 
 ```dart
@@ -84,6 +87,7 @@ FluxBorder.electric(
 ```
 
 ### 4. Spotlight
+
 A spotlight effect that moves around the border, illuminating it.
 
 ```dart
@@ -94,6 +98,7 @@ FluxBorder.spotlight(
 ```
 
 ### 5. Dotted
+
 Moving dots with customizable spacing.
 
 ```dart
@@ -105,6 +110,7 @@ FluxBorder.dotted(
 ```
 
 ### 6. Slashed
+
 Moving diagonal slashes.
 
 ```dart
@@ -117,6 +123,7 @@ FluxBorder.slashed(
 ```
 
 ### 7. Wavy
+
 A sinusoidal wave pattern that flows around the border.
 
 ```dart
@@ -129,6 +136,7 @@ FluxBorder.wavy(
 ```
 
 ### 8. Helix
+
 A double-helix DNA-like structure.
 
 ```dart
@@ -140,6 +148,7 @@ FluxBorder.helix(
 ```
 
 ### 9. Liquid
+
 A fluid, organic blob effect that flows within the border.
 
 ```dart
@@ -151,6 +160,7 @@ FluxBorder.liquid(
 ```
 
 ### 10. Glitch
+
 Digital glitch artifacts and noise.
 
 ```dart
@@ -162,6 +172,7 @@ FluxBorder.glitch(
 ```
 
 ### 11. Circuit
+
 Tech-inspired circuit board traces appearing and disappearing.
 
 ```dart
@@ -173,6 +184,7 @@ FluxBorder.circuit(
 ```
 
 ### 12. Fire
+
 Realistic fire effect burning around the edges.
 
 ```dart
@@ -184,6 +196,7 @@ FluxBorder.fire(
 ```
 
 ### 13. Sparkle
+
 Twinkling stars or particles.
 
 ```dart
@@ -198,15 +211,15 @@ FluxBorder.sparkle(
 
 Most borders share these common parameters:
 
-| Parameter | Type | Default | Description |
-|---|---|---|---|
-| `child` | `Widget` | Required | The content widget. |
-| `borderWidth` | `double` | `3.0` | Thickness of the border. |
-| `borderRadius` | `double` | `16.0` | Radius of the corners. |
-| `speed` | `double` | `1.0` | Animation speed. Negative values reverse direction. `0.0` stops animation. |
-| `glow` | `double` | `0.0` | Intensity of the outer glow (0.0 to 1.0 recommended). |
-| `color` | `Color` | varies | Primary color of the effect. |
-| `backgroundColor` | `Color` | `transparent` | Color behind the effect (inside the border). |
+| Parameter           | Type       | Default         | Description                                                                 |
+| ------------------- | ---------- | --------------- | --------------------------------------------------------------------------- |
+| `child`           | `Widget` | Required        | The content widget.                                                         |
+| `borderWidth`     | `double` | `3.0`         | Thickness of the border.                                                    |
+| `borderRadius`    | `double` | `16.0`        | Radius of the corners.                                                      |
+| `speed`           | `double` | `1.0`         | Animation speed. Negative values reverse direction.`0.0` stops animation. |
+| `glow`            | `double` | `0.0`         | Intensity of the outer glow (0.0 to 1.0 recommended).                       |
+| `color`           | `Color`  | varies          | Primary color of the effect.                                                |
+| `backgroundColor` | `Color`  | `transparent` | Color behind the effect (inside the border).                                |
 
 Each border type may have specific parameters (like `dotSpacing`, `wavelength`, `viscosity`, etc.) exposed in their respective factory constructors.
 

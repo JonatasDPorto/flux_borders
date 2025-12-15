@@ -6,6 +6,10 @@ Flux Borders allows you to add unique visual effects to your Flutter widgets wit
 
 ## Features
 
+<div align="center">
+  <video src="github_assets/videos/showcase.mp4" width="100%" controls muted autoplay loop playsinline></video>
+</div>
+
 *   **High Performance**: Uses Fragment Shaders (`.frag`) for smooth animations (60 FPS+).
 *   **Diverse Effects**: Includes 13+ unique border types ranging from classic Neon to complex effects like Fire, Liquid, and Circuit.
 *   **Highly Customizable**: Adjust colors, speeds, widths, spacing, and more.

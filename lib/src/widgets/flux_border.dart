@@ -402,13 +402,11 @@ class _FluxBorderState extends State<FluxBorder>
   Widget build(BuildContext context) {
     if (!_initialized || _shader == null) {
       return Padding(
-        padding: EdgeInsets.all(widget.params.borderWidth),
+        padding: EdgeInsets.all(widget.params.borderWidth / 2.0),
         child: ClipRRect(
           borderRadius: BorderRadius.circular(
-            (widget.params.borderRadius - widget.params.borderWidth).clamp(
-              0.0,
-              double.infinity,
-            ),
+            (widget.params.borderRadius - widget.params.borderWidth / 2.0)
+                .clamp(0.0, double.infinity),
           ),
           child: widget.child,
         ),
@@ -421,19 +419,19 @@ class _FluxBorderState extends State<FluxBorder>
         : 0.0;
 
     return CustomPaint(
-      painter: _FluxBorderPainter(
+      foregroundPainter: _FluxBorderPainter(
         shader: _shader!,
         time: _time,
         params: widget.params,
       ),
       child: Padding(
-        padding: EdgeInsets.all(widget.params.borderWidth + extraGlowSpace),
+        padding: EdgeInsets.all(
+          widget.params.borderWidth / 2.0 + extraGlowSpace,
+        ),
         child: ClipRRect(
           borderRadius: BorderRadius.circular(
-            (widget.params.borderRadius - widget.params.borderWidth).clamp(
-              0.0,
-              double.infinity,
-            ),
+            (widget.params.borderRadius - widget.params.borderWidth / 2.0)
+                .clamp(0.0, double.infinity),
           ),
           child: widget.child,
         ),

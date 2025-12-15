@@ -220,7 +220,6 @@ class HomePage extends StatelessWidget {
       decoration: BoxDecoration(
         color: const Color(0xFF1E1E1E),
         borderRadius: BorderRadius.circular(15),
-        // Remove border side here as FluxBorder handles it
       ),
       child: Row(
         mainAxisAlignment: MainAxisAlignment.spaceBetween,
@@ -237,10 +236,7 @@ class HomePage extends StatelessWidget {
         ],
       ),
     );
-
-    // Apply the specific border
     Widget borderedButton = borderBuilder(buttonContent);
-
     return Padding(
       padding: const EdgeInsets.only(bottom: 15),
       child: GestureDetector(

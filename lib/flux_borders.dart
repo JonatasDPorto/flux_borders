@@ -1,5 +1,3 @@
-library flux_borders;
-
 export 'src/widgets/flux_border.dart';
 export 'src/params/flux_border_params.dart';
 export 'src/params/snake_params.dart';

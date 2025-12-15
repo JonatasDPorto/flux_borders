@@ -6,10 +6,8 @@ class LiquidParams extends FluxBorderParams {
   final Color color;
   final Color backgroundColor;
 
-  /// Controls the frequency of blobs. Default 3.0.
   final double frequency;
 
-  /// Controls the viscosity/speed variance of blobs. Default 1.0.
   final double viscosity;
 
   const LiquidParams({

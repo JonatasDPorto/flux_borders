@@ -463,27 +463,18 @@ class _FluxBorderPainter extends CustomPainter {
     double extraGlowSpace = (params.glow > 0.0 && params.needsGlowPadding)
         ? (params.borderWidth * 3.0).clamp(15.0, 50.0)
         : 0.0;
-    double totalWidth = params.borderWidth + extraGlowSpace;
 
     double innerRadius = params.borderRadius - params.borderWidth;
     if (innerRadius < 0) innerRadius = 0;
 
-    // FIX: Center radius depends ONLY on border width, not glow space.
-    // This keeps the border anchored to the content.
     double centerRadius = innerRadius + params.borderWidth / 2.0;
 
     shader.setFloat(3, centerRadius);
 
-    // 3: uWidth (float) -> float 4
-    // Pass REAL BORDER WIDTH to keep line thickness constant.
     shader.setFloat(4, params.borderWidth);
 
-    // 4..11: Specific params via polymorphic method (Indices 5..12)
-    // Now also Index 13 (Glow)
     params.setUniforms(shader);
 
-    // Index 14: Extra Glow Space
-    // Used to correct box size in updated shaders
     shader.setFloat(14, extraGlowSpace);
 
     final paint = Paint()..shader = shader;

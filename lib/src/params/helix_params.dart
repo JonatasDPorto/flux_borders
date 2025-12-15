@@ -6,10 +6,8 @@ class HelixParams extends FluxBorderParams {
   final Color color;
   final Color backgroundColor;
 
-  /// Controls the frequency of the twists. Default 4.0.
   final double frequency;
 
-  /// Controls the amplitude (width) of the helix strands. Default 0.5.
   final double amplitude;
 
   const HelixParams({

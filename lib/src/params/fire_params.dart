@@ -1,5 +1,4 @@
 import 'dart:ui';
-import 'package:flutter/material.dart';
 import 'flux_border_params.dart';
 
 class FireParams extends FluxBorderParams {
@@ -9,8 +8,8 @@ class FireParams extends FluxBorderParams {
   final double turbulence;
 
   const FireParams({
-    this.color = Colors.deepOrange,
-    this.backgroundColor = Colors.transparent,
+    this.color = const Color(0xFFFF5722),
+    this.backgroundColor = const Color(0x00000000),
     this.flameHeight = 1.0,
     this.turbulence = 1.0,
     super.borderWidth,

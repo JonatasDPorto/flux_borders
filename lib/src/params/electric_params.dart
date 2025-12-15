@@ -1,5 +1,4 @@
 import 'dart:ui';
-import 'package:flutter/material.dart';
 import 'flux_border_params.dart';
 
 class ElectricParams extends FluxBorderParams {
@@ -7,8 +6,8 @@ class ElectricParams extends FluxBorderParams {
   final Color backgroundColor;
 
   const ElectricParams({
-    this.color = Colors.purpleAccent,
-    this.backgroundColor = Colors.black,
+    this.color = const Color(0xFFE91E63),
+    this.backgroundColor = const Color(0xFF000000),
     super.borderWidth,
     super.borderRadius,
     super.speed,

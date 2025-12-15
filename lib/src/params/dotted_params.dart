@@ -1,5 +1,4 @@
 import 'dart:ui';
-import 'package:flutter/material.dart';
 import 'flux_border_params.dart';
 
 class DottedParams extends FluxBorderParams {
@@ -8,8 +7,8 @@ class DottedParams extends FluxBorderParams {
   final double dotSpacing;
 
   const DottedParams({
-    this.color = Colors.white,
-    this.backgroundColor = Colors.transparent,
+    this.color = const Color(0xFFFFFFFF),
+    this.backgroundColor = const Color(0x00000000),
     this.dotSpacing = 4.0,
     super.borderWidth,
     super.borderRadius,

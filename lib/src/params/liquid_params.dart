@@ -1,5 +1,4 @@
 import 'dart:ui';
-import 'package:flutter/material.dart';
 import 'flux_border_params.dart';
 
 class LiquidParams extends FluxBorderParams {
@@ -11,8 +10,8 @@ class LiquidParams extends FluxBorderParams {
   final double viscosity;
 
   const LiquidParams({
-    this.color = Colors.orangeAccent,
-    this.backgroundColor = Colors.transparent,
+    this.color = const Color(0xFFFF9100),
+    this.backgroundColor = const Color(0x00000000),
     this.frequency = 3.0,
     this.viscosity = 1.0,
     super.borderWidth,

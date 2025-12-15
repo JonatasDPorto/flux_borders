@@ -1,5 +1,4 @@
 import 'dart:ui';
-import 'package:flutter/material.dart';
 import 'flux_border_params.dart';
 
 class SpotlightParams extends FluxBorderParams {
@@ -7,7 +6,7 @@ class SpotlightParams extends FluxBorderParams {
   final Color backgroundColor;
 
   const SpotlightParams({
-    this.color = Colors.white,
+    this.color = const Color(0xFFFFFFFF),
     this.backgroundColor = const Color(0xFF212121),
     super.borderWidth,
     super.borderRadius,

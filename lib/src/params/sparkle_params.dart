@@ -1,5 +1,4 @@
 import 'dart:ui';
-import 'package:flutter/material.dart';
 import 'flux_border_params.dart';
 
 class SparkleParams extends FluxBorderParams {
@@ -9,8 +8,8 @@ class SparkleParams extends FluxBorderParams {
   final double twinkleSpeed;
 
   const SparkleParams({
-    this.color = Colors.white,
-    this.backgroundColor = Colors.transparent,
+    this.color = const Color(0xFFFFFFFF),
+    this.backgroundColor = const Color(0x00000000),
     this.density = 1.0,
     this.twinkleSpeed = 1.0,
     super.borderWidth,

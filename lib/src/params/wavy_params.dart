@@ -1,5 +1,4 @@
 import 'dart:ui';
-import 'package:flutter/material.dart';
 import 'flux_border_params.dart';
 
 class WavyParams extends FluxBorderParams {
@@ -9,8 +8,8 @@ class WavyParams extends FluxBorderParams {
   final double amplitude;
 
   const WavyParams({
-    this.color = Colors.blue,
-    this.backgroundColor = Colors.transparent,
+    this.color = const Color(0xFF2196F3),
+    this.backgroundColor = const Color(0x00000000),
     this.wavelength = 4.0,
     this.amplitude = 0.5,
     super.borderWidth,

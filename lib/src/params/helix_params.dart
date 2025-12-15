@@ -1,5 +1,4 @@
 import 'dart:ui';
-import 'package:flutter/material.dart';
 import 'flux_border_params.dart';
 
 class HelixParams extends FluxBorderParams {
@@ -11,8 +10,8 @@ class HelixParams extends FluxBorderParams {
   final double amplitude;
 
   const HelixParams({
-    this.color = Colors.cyanAccent,
-    this.backgroundColor = Colors.transparent,
+    this.color = const Color(0xFF18FFFF),
+    this.backgroundColor = const Color(0x00000000),
     this.frequency = 4.0,
     this.amplitude = 0.5,
     super.borderWidth,

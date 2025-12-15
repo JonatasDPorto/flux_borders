@@ -1,5 +1,4 @@
 import 'dart:ui';
-import 'package:flutter/material.dart';
 import 'flux_border_params.dart';
 
 class GlitchParams extends FluxBorderParams {
@@ -9,8 +8,8 @@ class GlitchParams extends FluxBorderParams {
   final double segmentSize;
 
   const GlitchParams({
-    this.color = Colors.cyanAccent,
-    this.backgroundColor = Colors.transparent,
+    this.color = const Color(0xFF18FFFF),
+    this.backgroundColor = const Color(0x00000000),
     this.intensity = 1.0,
     this.segmentSize = 1.0,
     super.borderWidth,

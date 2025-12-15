@@ -1,6 +1,6 @@
 name: flux_borders
 description: "A high-performance Flutter package for creating stunning, animated, and customizable borders using Fragment Shaders (GLSL)."
-version: 0.0.1
+version: 0.0.2
 homepage: https://github.com/JonatasDPorto/flux_borders
 repository: https://github.com/JonatasDPorto/flux_borders
 

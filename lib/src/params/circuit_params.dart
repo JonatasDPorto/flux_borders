@@ -1,5 +1,4 @@
 import 'dart:ui';
-import 'package:flutter/material.dart';
 import 'flux_border_params.dart';
 
 class CircuitParams extends FluxBorderParams {
@@ -10,7 +9,7 @@ class CircuitParams extends FluxBorderParams {
 
   const CircuitParams({
     this.color = const Color(0xFF00FF00),
-    this.backgroundColor = Colors.transparent,
+    this.backgroundColor = const Color(0x00000000),
     this.traceLength = 1.0,
     this.density = 1.0,
     super.borderWidth,

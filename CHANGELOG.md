@@ -1,3 +1,9 @@
+## 0.0.2
+
+* Fixed static analysis issues (removed unnecessary imports)
+* Updated README to support pub.dev video display
+* Improved code quality in parameter classes
+
 ## 0.0.1
 
 * Initial release of Flux Borders

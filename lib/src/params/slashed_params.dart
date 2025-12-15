@@ -1,5 +1,4 @@
 import 'dart:ui';
-import 'package:flutter/material.dart';
 import 'flux_border_params.dart';
 
 class SlashedParams extends FluxBorderParams {
@@ -9,8 +8,8 @@ class SlashedParams extends FluxBorderParams {
   final double dashRatio;
 
   const SlashedParams({
-    this.color = Colors.yellow,
-    this.backgroundColor = Colors.black,
+    this.color = const Color(0xFFFFEB3B),
+    this.backgroundColor = const Color(0xFF000000),
     this.dashSpacing = 3.0,
     this.dashRatio = 0.5,
     super.borderWidth,

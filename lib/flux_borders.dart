@@ -1,0 +1,17 @@
+library flux_borders;
+
+export 'src/widgets/flux_border.dart';
+export 'src/params/flux_border_params.dart';
+export 'src/params/snake_params.dart';
+export 'src/params/rainbow_params.dart';
+export 'src/params/electric_params.dart';
+export 'src/params/spotlight_params.dart';
+export 'src/params/dotted_params.dart';
+export 'src/params/slashed_params.dart';
+export 'src/params/wavy_params.dart';
+export 'src/params/helix_params.dart';
+export 'src/params/liquid_params.dart';
+export 'src/params/glitch_params.dart';
+export 'src/params/circuit_params.dart';
+export 'src/params/fire_params.dart';
+export 'src/params/sparkle_params.dart';

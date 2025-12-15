@@ -1,0 +1,35 @@
+import 'dart:ui';
+import 'package:flutter/material.dart';
+import 'flux_border_params.dart';
+
+class SpotlightParams extends FluxBorderParams {
+  final Color color;
+  final Color backgroundColor;
+
+  const SpotlightParams({
+    this.color = Colors.white,
+    this.backgroundColor = const Color(0xFF212121),
+    super.borderWidth,
+    super.borderRadius,
+    super.speed,
+    super.glow,
+  });
+
+  @override
+  String get shaderAsset =>
+      'packages/flux_borders/assets/shaders/spotlight.frag';
+
+  @override
+  void setUniforms(FragmentShader shader) {
+    shader.setFloat(5, color.r);
+    shader.setFloat(6, color.g);
+    shader.setFloat(7, color.b);
+    shader.setFloat(8, backgroundColor.r);
+    shader.setFloat(9, backgroundColor.g);
+    shader.setFloat(10, backgroundColor.b);
+    shader.setFloat(11, 0.0);
+    shader.setFloat(12, 0.0);
+
+    shader.setFloat(13, glow);
+  }
+}
